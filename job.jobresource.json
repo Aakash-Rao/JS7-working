@@ -1,0 +1,7 @@
+{
+  "TYPE" : "JobResource",
+  "version" : "1.7.1",
+  "arguments" : {
+    "name" : "\"yourname\""
+  }
+}
