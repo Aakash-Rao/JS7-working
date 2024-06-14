@@ -1,0 +1,32 @@
+{
+  "simple": {
+    "iamLdapProtocol": "PLAIN",
+    "iamLdapPort": 389,
+    "iamLdapHost": "ldap.forumsys.com"
+  },
+  "expert": {
+    "iamLdapServerUrl": "ldap://ldap.forumsys.com:389",
+    "iamLdapUserDnTemplate": "uid={0},dc=example,dc=com",
+    "iamLdapSearchBase": "dc=example,dc=com",
+    "iamLdapGroupNameAttribute": "ou",
+    "iamLdapUserNameAttribute": "uid",
+    "iamLdapUserSearchFilter": "(uniqueMember=uid=%s,dc=example,dc=com)",
+    "iamLdapUseStartTls": false,
+    "iamLdapGroupRolesMap": {
+      "items": [
+        {
+          "ldapGroupDn": "scientists",
+          "roles": [
+            "application_manager"
+          ]
+        },
+        {
+          "ldapGroupDn": "mathematicians",
+          "roles": [
+            "administrator"
+          ]
+        }
+      ]
+    }
+  }
+}
